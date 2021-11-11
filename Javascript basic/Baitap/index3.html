@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #text1{
+            color: red;
+        }
+        #text2{
+            color:green;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #text3{
+            background-color:rgb(29, 209, 29);
+            text-decoration: underline blue;
+            font-family:Verdana, Arial;
+        }
+        #text4{
+            color:pink;
+            text-shadow: 2px 2px #000;
+            font-size: 30px;
+        }
+        #text5{
+            text-decoration: line-through;
+            color: greenyellow;
+            text-align: right;
+            font-size: 4rem;
+        }
+        #text6{
+            color: yellow;
+            text-decoration: underline red ;
+        }
+        #text7{
+            background-color:blue;
+            color: burlywood;
+        }
+        #listtext1{
+            margin: 5px;
+            background-color:rgb(197, 22, 183);
+            padding: 10px 5px;
+        }
+        #listtext2{
+            text-align: center;
+            margin-top: 10px;
+            background-color:rgb(25, 162, 216);
+            padding: 10px 5px;
+        }
+        #goto{
+            border: 1px solid;
+        }
+        #goto p{
+            background-color: #FE0001;
+        }
+        #goto p:first-child{
+            background-color: #B4E801;
+        }
+        #goto p:nth-child(2){
+            background-color:#768165;
+        }
+        #ini{
+            border: 1px solid;
+
+        }
+        #ini b,i{
+            background-color: #FF69CA;
+        }
+        #ini2{
+            color:#810802;
+            border: 1px solid; 
+        }
+        #ini2 p:nth-child(2),#ini2 p:nth-child(3){
+            background-color:#9BCC32;
+            color:#810802;
+        }
+        #ini3{
+            border: 1px solid;
+        }
+        #ini3 p:first-child{
+            background-color:#87CFFB;
+            color:#D88099;
+        }
+        #ini3 p:nth-child(2){
+            background-color:#A42A2B;
+            color:#E9DF09;
+        }
+        .ini5::first-letter {
+            background-color: #FBF400;
+            
+        }
+        .ini5{
+            background-color: #008000;
+
+        }
+        .ini5:nth-child(2){
+            background-color: #FE0001;
+        }
+        .ini5:nth-child(4){
+            background-color: #FE0001;
+
+        }
+
+        .ini5 span{
+            background-color: #D3D2D2;
+            color: #E65E3E;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bai 1 -->
+    <h1 style="color: aquamarine;">CSS colors and fonts</h1>
+    <h2 style="color:red">Change the color to red</h2>
+    <h3 style="color:blue;font-size:30px">Change the colors to blue and font to 30px</h3>
+    <p style = "color: pink; font-size:12px">This text should be pink</ps>
+    <p style = "color: blue;font-size: 2em">Change the color to your favourite and font to 2em</p>
+    <p style = "color: yellow;font-size:3rem">Change the color to yellow and font to 3rem</p>
+
+    <!-- Bai 2 -->
+    <p id = "text1">Css styling text.</p>
+    <p id = "text2"><b>This text should be green color, font'Arial' and bold</b></p>
+    <p id = "text3">The text should be in the center with bg color,font'Verdana',and thin</p>
+    <p id = "text4">This text should be pink i also have shadow</p>
+    <p id = "text5">Tomorrow i will go on a diet</p>
+    <p id = "text6">change the color to yellow</p>
+
+
+    <!-- bai 3 -->
+    <h1 style="margin-bottom: 30px; color: green">CSS selectors</h1>
+    <p style="color: blue; text-decoration: underline blue; font-size:18px">I'm a class selector</p>
+    <p id = "text7">I'm the ID selector: Here i am a boss</p>
+    <div id = "listtext1">
+        <p style= "color:red">i'm red</p>
+        <p style= "color:red">i'm also red</p>
+        <p style = "color: blue">What is going on? Why am i blue?!</p>
+    </div>
+    <div id="listtext2">
+        <p style= "color:red">I'm odd number</p>
+        <p>I'm odd number</p>
+        
+        <p style= "color:red">I'm odd number</p>
+        <p>I'm odd number</p>
+
+    </div>
+
+
+    <!-- bai 4 -->
+    <p style = "background-color:#fe0001">Audi</p>
+    <p style= "background-color: #ffff00">Budi</p>
+    <p style= "background-color: #008000">Caca</p>
+    <div id="goto">
+        <p><a href="#">go to abc.com</a></p>
+        <p><a href="#">go to xyz.com</a></p>
+    </div>
+    <div id = "ini">
+        <p><b>Ini bold</b></p>
+        <p><i>Ini italic</i></p>
+        <p style= "text-decoration: underline;"><b>Ini underline</b></p>
+    </div>
+    <div id = "ini2">
+        <p>Ini heading 3</p>
+        <p>Ini heading 3</p>
+        <p>Ini paragraph 3</p>
+    </div>
+    
+    <div id = "ini3">
+        <p>Ini p di article</p>
+        <p>Ini p di main</p>
+    </div>
+    <p style = "font-size:8px"><b>Ini heading 6</b></p>
+
+    <!-- Bai 5 -->
+    <div>
+        <p class = "ini5"><span>Ini h3 pertama</span></p>
+        <p class = "ini5"><span>Ini h3 kedua</span></p>
+        <p class = "ini5"><span>Ini h3 ketiga</span></p>
+        <p class = "ini5"><span>h3 keempat</span> </p>
+        <p class = "ini5"><span>h3 kelima</span> </p>
+        <h2>Ini heading 1</h2>
+        <input type="text" placeholder="input nama"><input type="text" placeholder = "input usia"><input type="text" placeholder = "input kota">
+        <button>click me!</button>
+    </div>
+    
+</body>
+</html>

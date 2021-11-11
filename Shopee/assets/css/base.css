@@ -1,0 +1,84 @@
+/* Global variable */
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #EE4D2D;
+}
+
+
+*{
+    box-sizing: inherit;
+
+}
+
+
+html{
+    /* Hack 1 rem = 10px */
+    font-size: 62.5%;
+    line-height: 16px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+/* Modal */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal__body{
+    position: relative;
+    margin: auto;
+    background-color:var(--white-color);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+
+/* Register form */
+
+
+
+
+/* Log in form */
+
+
